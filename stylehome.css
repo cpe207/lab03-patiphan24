@@ -238,36 +238,55 @@ header h1 {
     font-size: 2.5em;
 }
 
-.skill {
-    font-family: Playfair Display;
-    font-size: 5rem;
-    margin-top: 40px;
-    margin-left: 930px; 
-    color: rgb(255, 255, 255);
-    position: absolute;
+.section-title {
+    font-size: 6rem;
+    color: var(--main-color);
+    text-align: center;
+    margin-bottom: 4rem;
 }
 
-.stack {
-    font-family: Playfair Display;
-    font-size: 5rem;
-    margin-top: 40px;
-    margin-left: 420px; 
-    color: rgb(255, 255, 255);
-    position: absolute;
+.skills {
+    background-color: var(--bg--color);
+    padding: 5rem 12%;
 }
 
-.skill-container {
-    border: solid tan;
-    width: 500px;
+.skills-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.skill-image img {
+    max-width: 470px;
+    margin-right: 2rem;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.skill-image img:hover {
+    transform: translateY(-10px); 
+}
+
+.skills-list {
+    flex: 1;
+}
+
+.skill-item {
+    margin-bottom: 2rem;
+    border: 2px solid var(--main-color);
     padding: 1rem;
-    margin-left: 800px;
-    margin-top: 130px;
-    font-size: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; 
 }
 
-.description {
-    font-size: 3rem; 
-    line-height: 2.4rem; 
-    margin-bottom: 2rem; 
+.skill-item:hover {
+    transform: translateY(-10px);
 }
-  
+
+.skill-description h3 {
+    font-size: 3rem;
+    color: var(--main-color);
+}
+
+.skill-description p {
+    font-size: 2rem;
+    color: var(--text-color);
+}
