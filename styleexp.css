@@ -155,10 +155,15 @@ body {
 .experience, .education {
     flex: 1;
     padding: 2rem;
-    background-color: var(--second-bg-color); 
+    background-color: rgb(239, 239, 239); 
     border: 2px solid white; 
     border-radius: 10px; 
-    margin: 0 1rem; 
+    margin: 0 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.experience:hover, .education:hover {
+    transform: translateY(-10px);
 }
 
 .experience h2, .education h2 {
@@ -180,5 +185,5 @@ body {
 .experience-item p, .education-item p {
     font-size: 2rem; 
     margin-bottom: 0.5rem; 
-    color: var(--text-color); 
+    color: var(--bg--color); 
 }
