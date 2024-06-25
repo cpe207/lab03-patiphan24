@@ -243,6 +243,11 @@ header h1 {
     color: var(--main-color);
     text-align: center;
     margin-bottom: 4rem;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.section-title:hover {
+    transform: translateY(-10px); 
 }
 
 .skills {
@@ -278,7 +283,7 @@ header h1 {
 }
 
 .skill-item:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px); 
 }
 
 .skill-description h3 {
